@@ -27,10 +27,20 @@ const config = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          "100": "#CAD9E2",
+          "300": "#96B3C5",
+          "500": "#618DA8",
+          "700": "#486D84",
+          "900": "#334C5C",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          "100": "#FFE8C2",
+          "300": "#FFC870",
+          "500": "#FFB133",
+          "700": "#F59700",
+          "900": "#B87100",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",

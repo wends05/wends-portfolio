@@ -1,8 +1,16 @@
+import Navbar from "@/components/Navbar";
+import Hero from "./Hero";
+import Principles from "./Principles";
+import Projects from "./Projects";
+import Skills from "./Skills";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex h-2 w-2 gap-2 md:block">Hello world</div>
-      <p className="flex h-2 w-2 flex-col gap-2 md:flex">helo world</p>
+    <main className="flex flex-col">
+      <Hero />
+      <Principles />
+      <Skills />
+      <Projects />
     </main>
   );
 }

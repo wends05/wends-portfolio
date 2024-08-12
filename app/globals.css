@@ -60,10 +60,55 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
+  html {
+    @apply scroll-smooth;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-neutral-900 text-white;
+  }
+
+  h1 {
+    @apply text-6xl font-bold;
+  }
+
+  h2 {
+    @apply text-5xl font-bold;
+  }
+
+  h3 {
+    @apply text-4xl font-bold;
+  }
+
+  h4 {
+    @apply text-3xl font-semibold;
+  }
+
+  button {
+    @apply rounded-xl bg-neutral-800 px-4 text-lg text-neutral-100 transition-colors;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neutral-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-700;
+}
+
+@layer components {
+  .covered {
+    @apply rounded-xl bg-neutral-800 px-4 text-lg text-neutral-100 transition-colors hover:bg-neutral-600;
+  }
+  .subheader {
+    @apply font-semibold;
+  }
+  .label {
+    @apply text-xl;
   }
 }

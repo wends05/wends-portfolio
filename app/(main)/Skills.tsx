@@ -11,11 +11,12 @@ import {
 } from "@icons-pack/react-simple-icons";
 import { Code2, Gamepad2, Smartphone } from "lucide-react";
 import OtherSkills from "./OtherSkills";
+import Languages from "./Languages";
 
 const Skills = () => {
   return (
     <div className="flex flex-col items-center">
-      <div className="relative flex min-h-screen items-center justify-center">
+      <div className="flex h-[400px] items-center justify-center">
         <div className="relative">
           <div className="absolute -left-[15vw] -top-20 flex flex-col items-center">
             <Code2 />
@@ -68,6 +69,7 @@ const Skills = () => {
         />
       </div>
       <OtherSkills />
+      <Languages />
     </div>
   );
 };

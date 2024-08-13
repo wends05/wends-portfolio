@@ -84,6 +84,10 @@
     @apply text-3xl font-semibold;
   }
 
+  h5 {
+    @apply text-2xl font-semibold;
+  }
+
   button {
     @apply rounded-xl bg-neutral-800 px-4 text-lg text-neutral-100 transition-colors;
   }

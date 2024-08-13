@@ -7,8 +7,8 @@ const Principles = () => {
         <h3 className="w-full text-primary-300">2 Principles in mind</h3>
       </div>
       <div className="flex w-full flex-col gap-32 px-4 py-10 lg:px-24">
-        <div className="flex flex-col items-center gap-4 md:flex-row justify-evenly">
-          <div className="flex flex-col gap-2 md:max-w-[30vw] text-right">
+        <div className="flex flex-col items-center justify-evenly gap-4 md:flex-row">
+          <div className="flex max-w-md flex-col gap-2 md:text-right">
             <h4>Change is constant</h4>
             <p>
               In the world of coding, multiple technologies and tools always
@@ -19,9 +19,9 @@ const Principles = () => {
           </div>
           <div className="h-96 w-64 bg-neutral-800 text-center">image here</div>
         </div>
-        <div className="flex flex-col items-center gap-4 md:flex-row justify-evenly">
+        <div className="flex flex-col items-center justify-evenly gap-4 md:flex-row">
           <div className="h-96 w-64 bg-neutral-800 text-center">image here</div>
-          <div className="flex flex-col gap-2 md:max-w-[30vw]">
+          <div className="flex max-w-md flex-col gap-2">
             <h4>There&apos;s always room for improvement</h4>
             <p>
               Mistakes are normal in software development. Perfect development
@@ -32,17 +32,7 @@ const Principles = () => {
           </div>
         </div>
       </div>
-      <div className="items-center space-y-7 px-4 py-10 text-center max-w-md self-center">
-        <h2 className="text-primary-500">
-          Letting my curiosity lead me anywhere
-        </h2>
-        <p>
-          Software Engineering revolves on continuous learning, adapting to
-          newer technologies. My curiosity and interest on related topics to
-          technologies would help me survive this course and reach my goals in
-          this field.
-        </p>
-      </div>
+      
       <div className="h-28 w-full bg-gradient-to-t from-neutral-900" />
     </div>
   );

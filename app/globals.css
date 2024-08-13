@@ -62,7 +62,10 @@
 @layer base {
   html {
     @apply scroll-smooth;
+  html {
+    @apply scroll-smooth;
   }
+
 
   body {
     @apply bg-neutral-900 text-white;

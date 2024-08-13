@@ -32,10 +32,20 @@ const config = {
           "500": "#618DA8",
           "700": "#486D84",
           "900": "#334C5C",
+          "100": "#CAD9E2",
+          "300": "#96B3C5",
+          "500": "#618DA8",
+          "700": "#486D84",
+          "900": "#334C5C",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          "100": "#FFE8C2",
+          "300": "#FFC870",
+          "500": "#FFB133",
+          "700": "#F59700",
+          "900": "#B87100",
           "100": "#FFE8C2",
           "300": "#FFC870",
           "500": "#FFB133",
@@ -87,4 +97,4 @@ const config = {
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
 
-export default config
+export default config;

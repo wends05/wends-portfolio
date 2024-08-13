@@ -62,60 +62,60 @@
 @layer base {
   html {
     @apply scroll-smooth;
-  html {
-    @apply scroll-smooth;
+    html {
+      @apply scroll-smooth;
+    }
+
+    body {
+      @apply bg-neutral-900 text-white;
+    }
+
+    h1 {
+      @apply text-6xl font-bold;
+    }
+
+    h2 {
+      @apply text-5xl font-bold;
+    }
+
+    h3 {
+      @apply text-4xl font-bold;
+    }
+
+    h4 {
+      @apply text-3xl font-semibold;
+    }
+
+    h5 {
+      @apply text-2xl font-semibold;
+    }
+
+    button {
+      @apply rounded-xl bg-neutral-800 px-4 text-lg text-neutral-100 transition-colors;
+    }
   }
 
-
-  body {
-    @apply bg-neutral-900 text-white;
+  ::-webkit-scrollbar {
+    width: 10px;
   }
 
-  h1 {
-    @apply text-6xl font-bold;
+  ::-webkit-scrollbar-track {
+    @apply bg-neutral-800;
   }
 
-  h2 {
-    @apply text-5xl font-bold;
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-700;
   }
 
-  h3 {
-    @apply text-4xl font-bold;
-  }
-
-  h4 {
-    @apply text-3xl font-semibold;
-  }
-
-  h5 {
-    @apply text-2xl font-semibold;
-  }
-
-  button {
-    @apply rounded-xl bg-neutral-800 px-4 text-lg text-neutral-100 transition-colors;
-  }
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-neutral-800;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-neutral-700;
-}
-
-@layer components {
-  .covered {
-    @apply rounded-xl bg-neutral-800 px-4 text-lg text-neutral-100 transition-colors hover:bg-neutral-600;
-  }
-  .subheader {
-    @apply font-semibold;
-  }
-  .label {
-    @apply text-xl;
+  @layer components {
+    .covered {
+      @apply rounded-xl bg-neutral-800 px-4 text-lg text-neutral-100 transition-colors hover:bg-neutral-600;
+    }
+    .subheader {
+      @apply font-semibold;
+    }
+    .label {
+      @apply text-xl;
+    }
   }
 }

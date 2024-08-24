@@ -1,18 +1,46 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
 
+const nameVariants = {
+  initial: {
+    opacity: 0,
+  },
+  whileInView: {
+    opacity: 1,
+  },
+};
+
+const nameChildrenVariants = {
+  initial: {
+    opacity: 0,
+  },
+  whileInView: {
+    opacity: 1,
+  },
+};
 const Hero = () => {
   return (
-    <div className="relative flex min-h-[400px] h-screen justify-center px-4 text-center">
-      <div className="h-max self-center">
+    <div className="relative flex h-screen min-h-[400px] justify-center px-4 text-center">
+      <div className="self-center">
+        <motion.h1 
+        initial="initial"
+        whileInView="whileInView"
+        
+        variants={nameVariants} transition={{
+          staggerChildren: 0.5,
+        }}>
+          <motion.span variants={nameChildrenVariants}>Wendell </motion.span>
+          <motion.span variants={nameChildrenVariants}>Terence </motion.span>
+          <motion.span variants={nameChildrenVariants}>Dador </motion.span>
+        </motion.h1>
         <div>
           Bachelor of Science
           <br />
           in
           <span className="text-secondary-500"> Software Engineering</span>
         </div>
-        <h1>Wendell Terence Dador</h1>
       </div>
-      <div className="absolute bottom-2  right-2 lg:right-32 flex w-screen items-center justify-end gap-2 ">
+      <div className="absolute bottom-2 right-2 flex w-screen items-center justify-end gap-2 lg:right-32">
         <div className="h-1 bg-white sm:w-[20vh]"></div>
         <p className="">
           Earliest Graduation

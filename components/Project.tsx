@@ -61,7 +61,7 @@ const Project = ({
         </div>
         <div className="space-y-4">
           <div className="flex justify-between">
-            <p className="w-[50%] md:w-[30%]">{description}</p>
+            <p className="w-[60%] md:w-[30%]">{description}</p>
             <div className="space-y-2">{tech}</div>
           </div>
           <div className="flex justify-between">

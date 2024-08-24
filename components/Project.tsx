@@ -55,13 +55,13 @@ const Project = ({
       </motion.div>
       <div className="absolute -z-10 h-full w-full bg-black opacity-50" />
       <div className="flex w-full flex-col justify-between p-4 text-start sm:p-8 md:p-16 lg:p-32">
-        <div className="">
-          <h1>{title}</h1>
+        <div >
+          <h1 className="text-pretty text-4xl sm:text-6xl">{title}</h1>
           <h5>{author}</h5>
         </div>
         <div className="space-y-4">
           <div className="flex justify-between">
-            <p className="w-[30%]">{description}</p>
+            <p className="w-[50%] md:w-[30%]">{description}</p>
             <div className="space-y-2">{tech}</div>
           </div>
           <div className="flex justify-between">

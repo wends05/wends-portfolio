@@ -3,12 +3,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import TransitionProvider from "@/utils/TransitionProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Wendell",
-  description: "Wendell Terence Dador Portfolio Website",
+  description: "Portfolio",
 };
 
 export default function RootLayout({
@@ -19,9 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <TransitionProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </TransitionProvider>
       </body>
     </html>
   );

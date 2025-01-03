@@ -8,8 +8,8 @@ import TransitionProvider from "@/utils/TransitionProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Wendell",
-  description: "Portfolio",
+  title: "wends",
+  description: "software engineer",
 };
 
 export default function RootLayout({

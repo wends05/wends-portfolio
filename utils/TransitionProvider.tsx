@@ -1,5 +1,5 @@
 "use client";
-import { useAnimate } from "framer-motion";
+import { useAnimate } from "motion/react";
 import { usePathname, useRouter } from "next/navigation";
 import { createContext, ReactNode, useEffect, useState } from "react";
 

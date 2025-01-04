@@ -1,4 +1,3 @@
-import React from "react";
 import {
   SiFigma,
   SiFirebase,
@@ -12,7 +11,7 @@ import {
 const OtherSkills = () => {
   return (
     <div className="flex min-h-[400px] max-w-[400px] flex-col items-center justify-center px-4 text-center">
-      <div className="relative p-4 bg-neutral-800 rounded-lg drop-shadow-lg">
+      <div className="relative rounded-lg bg-neutral-800 p-4 drop-shadow-lg">
         <h2>Other Skills</h2>
         <p>
           Software Engineering is a diverse field. But there are certain tools

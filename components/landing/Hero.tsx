@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const nameVariants = {
   initial: {
@@ -22,13 +22,14 @@ const Hero = () => {
   return (
     <div className="relative flex h-screen min-h-[400px] justify-center px-4 text-center">
       <div className="self-center">
-        <motion.h1 
-        initial="initial"
-        whileInView="whileInView"
-        
-        variants={nameVariants} transition={{
-          staggerChildren: 0.5,
-        }}>
+        <motion.h1
+          initial="initial"
+          whileInView="whileInView"
+          variants={nameVariants}
+          transition={{
+            staggerChildren: 0.5,
+          }}
+        >
           <motion.span variants={nameChildrenVariants}>Wendell </motion.span>
           <motion.span variants={nameChildrenVariants}>Terence </motion.span>
           <motion.span variants={nameChildrenVariants}>Dador </motion.span>

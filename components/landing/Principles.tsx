@@ -32,7 +32,7 @@ const Principles = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="h-28 w-full bg-gradient-to-t from-neutral-900" />
     </div>
   );

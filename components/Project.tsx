@@ -2,7 +2,7 @@
 
 import Image, { StaticImageData } from "next/image";
 import React, { ReactNode, useEffect, useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "motion/react";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 
@@ -27,7 +27,7 @@ const Project = ({
   github,
   livelink,
   date,
-  livelinktext
+  livelinktext,
 }: ProjectProps) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -55,7 +55,7 @@ const Project = ({
       </motion.div>
       <div className="absolute -z-10 h-full w-full bg-black opacity-50" />
       <div className="flex w-full flex-col justify-between p-4 text-start sm:p-8 md:p-16 lg:p-32">
-        <div >
+        <div>
           <h1 className="text-pretty text-4xl sm:text-6xl">{title}</h1>
           <h5>{author}</h5>
         </div>
@@ -71,16 +71,14 @@ const Project = ({
                   <SiGithub />
                 </Link>
               )}
-              {
-                livelink && (
-                  <Link href={livelink} 
-                  
-                  className="bg-neutral-800 py-1 px-2 rounded-lg"
-                  >
-                    <div>{livelinktext ? livelinktext : "Live Link"}</div>
-                  </Link>
-                )
-              }
+              {livelink && (
+                <Link
+                  href={livelink}
+                  className="rounded-lg bg-neutral-800 px-2 py-1"
+                >
+                  <div>{livelinktext ? livelinktext : "Live Link"}</div>
+                </Link>
+              )}
             </div>
             {date.toUTCString().split(" ")[2] + " " + date.getFullYear()}
           </div>

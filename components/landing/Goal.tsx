@@ -1,5 +1,3 @@
-import React from "react";
-
 const Goal = () => {
   return (
     <div className="max-w-md items-center space-y-7 self-center px-4 py-10 text-center">

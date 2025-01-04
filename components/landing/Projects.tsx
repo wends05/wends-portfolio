@@ -1,10 +1,9 @@
 import Project from "@/components/Project";
-import React from "react";
 import capycopy from "@/public/projectImages/capycopy.jpg";
 import jankenfun from "@/public/projectImages/jankenfunproject.jpg";
 import baconawa from "@/public/projectImages/baconawa.jpg";
 import clicker from "@/public/projectImages/godotproject.jpg";
-import setemp from '@/public/projectImages/se-temp.jpg'
+import setemp from "@/public/projectImages/se-temp.jpg";
 import {
   SiCss3,
   SiFirebase,

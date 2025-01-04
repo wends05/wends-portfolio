@@ -33,7 +33,7 @@ const Skills = () => {
           <h1>Skills</h1>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-10 px-4 py-12 lg:h-[500px] lg:flex-row max-w-screen-md">
+      <div className="flex max-w-screen-md flex-col items-center justify-center gap-10 px-4 py-12 lg:h-[500px] lg:flex-row">
         <Skill
           name="Web"
           description="Web applications and sites is a common way to create software used for multiple purposes. It is a common topic in software engineering."

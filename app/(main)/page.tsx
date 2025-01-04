@@ -1,9 +1,8 @@
-
-import Hero from "./Hero";
-import Principles from "./Principles";
-import Projects from "./Projects";
-import Skills from "./Skills";
-import Goal from "./Goal";
+import Hero from "../../components/landing/Hero";
+import Principles from "../../components/landing/Principles";
+import Projects from "../../components/landing/Projects";
+import Skills from "../../components/landing/Skills";
+import Goal from "../../components/landing/Goal";
 
 export default function Home() {
   return (

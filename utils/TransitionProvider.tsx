@@ -15,6 +15,7 @@ const TransitionProvider = ({ children }: { children: ReactNode }) => {
   const [transitioning, setTransitioning] = useState(false);
   const path = usePathname();
   const router = useRouter();
+
   useEffect(() => {
     const transition = async () => {
       await animate("#title", { opacity: 0 }, { duration: 0.25, delay: 0.5 });
@@ -34,31 +35,21 @@ const TransitionProvider = ({ children }: { children: ReactNode }) => {
     setTitle(title);
 
     await animate(scope.current, { zIndex: 10 });
-    await animate(
-      "#bgtransition",
-      { opacity: 1 },
-      {
-        duration: 0.5,
-      },
-    );
-    await animate(
-      "#title",
-      { opacity: 1 },
-      {
-        duration: 0.5,
-      },
-    );
+    await animate("#bgtransition", { opacity: 1 }, { duration: 0.5 });
+    await animate("#title", { opacity: 1 }, { duration: 0.5 });
     router.push(href);
   };
+
   const value = {
     transition,
   };
+
   return (
     <TransitionContext.Provider value={value}>
       <div className="fixed -z-10 bg-white" ref={scope}>
         <div
           id="bgtransition"
-          className="fixed h-screen w-screen bg-primary-700 opacity-0"
+          className="fixed z-10 h-screen w-screen bg-primary-700 opacity-0"
         />
         <div
           id="title"

@@ -1,11 +1,5 @@
-import Project from "@/components/Project";
-import capycopy from "@/public/projectImages/capycopy.jpg";
-import jankenfun from "@/public/projectImages/jankenfunproject.jpg";
-import baconawa from "@/public/projectImages/baconawa.jpg";
-import clicker from "@/public/projectImages/godotproject.jpg";
-import setemp from "@/public/projectImages/se-temp.jpg";
 import {
-  SiCss3,
+  SiCss,
   SiFirebase,
   SiGodotengine,
   SiHtml5,
@@ -18,11 +12,17 @@ import {
   SiTypescript,
   SiVite,
 } from "@icons-pack/react-simple-icons";
+import Project from "@/components/Project";
+import baconawa from "@/public/projectImages/baconawa.jpg";
+import capycopy from "@/public/projectImages/capycopy.jpg";
+import clicker from "@/public/projectImages/godotproject.jpg";
+import jankenfun from "@/public/projectImages/jankenfunproject.jpg";
+import setemp from "@/public/projectImages/se-temp.jpg";
 
 const Projects = () => {
   return (
     <div className="relative flex flex-col text-center">
-      <div className="h-40 w-full bg-gradient-to-t from-neutral-700" />
+      <div className="h-40 w-full bg-linear-to-t from-neutral-700" />
       <div className="bg-neutral-700 px-4 py-20">
         <h3>What I&apos;ve made so far</h3>
         <p className="label text-secondary-500">Projects</p>
@@ -39,7 +39,7 @@ const Projects = () => {
             <>
               <SiJavascript />
               <SiHtml5 />
-              <SiCss3 />
+              <SiCss />
             </>
           }
         />
@@ -69,11 +69,7 @@ const Projects = () => {
           image={baconawa}
           date={new Date(2024, 8)}
           github="https://github.com/wends05/Baconawa-and-Eggs"
-          tech={
-            <>
-              <SiGodotengine />
-            </>
-          }
+          tech=<SiGodotengine />
         />
         <Project
           title="Clicker Game"
@@ -82,11 +78,7 @@ const Projects = () => {
           image={clicker}
           date={new Date(2023, 12)}
           github="https://github.com/wends05/clicker-game"
-          tech={
-            <>
-              <SiGodotengine />
-            </>
-          }
+          tech=<SiGodotengine />
         />
         <Project
           title="Software Engineering Web App"
@@ -105,7 +97,7 @@ const Projects = () => {
           }
         />
       </div>
-      <div className="h-40 w-full bg-gradient-to-b from-neutral-700" />
+      <div className="h-40 w-full bg-linear-to-b from-neutral-700" />
     </div>
   );
 };

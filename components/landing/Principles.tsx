@@ -1,8 +1,8 @@
 const Principles = () => {
   return (
     <div className="relative flex w-full flex-col bg-black">
-      <div className="absolute top-0 h-32 w-full bg-gradient-to-b from-neutral-900" />
-      <div className="flex h-[80vh] min-h-[400px] flex-col items-center justify-center self-center px-4">
+      <div className="absolute top-0 h-32 w-full bg-linear-to-b from-neutral-900" />
+      <div className="flex h-[80vh] min-h-100 flex-col items-center justify-center self-center px-4">
         <h2>Developer in the making,</h2>
         <h3 className="w-full text-primary-300">2 Principles in mind</h3>
       </div>
@@ -33,7 +33,7 @@ const Principles = () => {
         </div>
       </div>
 
-      <div className="h-28 w-full bg-gradient-to-t from-neutral-900" />
+      <div className="h-28 w-full bg-linear-to-t from-neutral-900" />
     </div>
   );
 };

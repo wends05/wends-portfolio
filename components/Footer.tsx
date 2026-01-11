@@ -1,18 +1,15 @@
-import Image from "next/image";
-import logo from "@/public/logos//main.svg";
-import TransitionLink from "./TransitionLink";
-import Link from "next/link";
 import { SiGithub } from "@icons-pack/react-simple-icons";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <div
-      className="relative h-[90vh] min-h-[500px] bg-neutral-700"
+      className="relative h-[90vh] min-h-125 bg-neutral-700"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="fixed bottom-0 flex h-[300px] w-full flex-col justify-end gap-4 p-4">
+      <div className="fixed bottom-0 flex h-75 w-full flex-col justify-end gap-4 p-4">
         <h1 className="text-center">Wendell Terence Dador</h1>
-        <h5 className="text-center text-secondary-500">
+        <h5 className="text-secondary-500 text-center">
           Aspiring Software Engineer
         </h5>
         <div className="pt-10">

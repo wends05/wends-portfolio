@@ -1,8 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import TransitionLink from "./TransitionLink";
 import { HomeIcon } from "lucide-react";
+import TransitionLink from "./TransitionLink";
 
 const Navbar = () => {
   return (

@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 interface SkillProps {
   name: string;
@@ -8,7 +8,7 @@ interface SkillProps {
 
 const Skill = ({ name, description, tech }: SkillProps) => {
   return (
-    <div className="flex h-full w-full max-w-[350px] flex-col justify-between gap-2 rounded-lg bg-neutral-800 p-4 drop-shadow-lg">
+    <div className="flex h-full w-full max-w-87.5 flex-col justify-between gap-2 rounded-lg bg-neutral-800 p-4 drop-shadow-lg">
       <div className="space-y-2">
         <h4>{name}</h4>
         <div className="flex items-center gap-2">{tech}</div>

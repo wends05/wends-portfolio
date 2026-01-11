@@ -1,10 +1,10 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
-import React, { ReactNode, useEffect, useRef } from "react";
-import { motion, useScroll, useTransform } from "motion/react";
 import { SiGithub } from "@icons-pack/react-simple-icons";
+import { motion, useScroll, useTransform } from "motion/react";
+import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
+import { type ReactNode, useRef } from "react";
 
 interface ProjectProps {
   title: string;
@@ -40,7 +40,7 @@ const Project = ({
   return (
     <div
       ref={ref}
-      className="relative flex h-screen min-h-[400px] overflow-hidden"
+      className="relative flex h-screen min-h-100 overflow-hidden"
     >
       <motion.div
         className="absolute top-0 -z-10 h-full w-full overflow-hidden"
@@ -80,7 +80,7 @@ const Project = ({
                 </Link>
               )}
             </div>
-            {date.toUTCString().split(" ")[2] + " " + date.getFullYear()}
+            {`${date.toUTCString().split(" ")[2]} ${date.getFullYear()}`}
           </div>
         </div>
       </div>

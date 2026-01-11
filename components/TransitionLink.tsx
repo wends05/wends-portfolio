@@ -1,6 +1,6 @@
 "use client";
 
-import React, { ReactNode, use } from "react";
+import { type ReactNode, use } from "react";
 import { TransitionContext } from "@/utils/TransitionProvider";
 
 interface ITransitionLink {
@@ -19,6 +19,7 @@ const TransitionLink = ({
   const { transition } = use(TransitionContext);
   return (
     <button
+      type="button"
       className={`w-max ${className}`}
       onClick={() => transition(href, title)}
     >

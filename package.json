@@ -6,46 +6,38 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prettier": "bun prettier . --write",
-    "prepare": "husky"
-  },
-  "prettier": {
-    "plugins": [
-      "prettier-plugin-tailwindcss"
-    ]
+    "prepare": "husky",
+    "lint": "biome lint"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "next lint --file ${filenames.join(' ')}",
-      "prettier --write"
+      "bun lint --write ${filenames.join(' ')}"
     ]
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "^9.7.0",
+    "@icons-pack/react-simple-icons": "^13.8.0",
+    "@tailwindcss/postcss": "^4.1.18",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.424.0",
-    "motion": "^11.18.2",
-    "next": "^15.3.3",
+    "lucide-react": "^0.562.0",
+    "motion": "^12.25.0",
+    "next": "^16.1.1",
     "punycode": "^2.3.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "tailwind-merge": "^2.6.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "tailwind-merge": "^3.4.0",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@types/node": "^20.19.0",
-    "@types/react": "^18.3.23",
-    "@types/react-dom": "^18.3.7",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "^15.3.3",
+    "@biomejs/biome": "2.3.11",
+    "@types/node": "^25.0.6",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.2",
-    "postcss": "^8.5.4",
-    "prettier": "^3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.12",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.8.3"
+    "lint-staged": "^16.2.7",
+    "postcss": "^8.5.6",
+    "prettier": "^3.7.4",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
   }
 }

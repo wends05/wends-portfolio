@@ -5,9 +5,9 @@ import {
   SiGithub,
   SiGooglegemini,
   SiNotion,
-  SiOpenai,
   SiPostgresql,
 } from "@icons-pack/react-simple-icons";
+import { Bot } from "lucide-react";
 const OtherSkills = () => {
   return (
     <div className="flex min-h-[400px] max-w-[400px] flex-col items-center justify-center px-4 text-center">
@@ -23,7 +23,7 @@ const OtherSkills = () => {
         <SiPostgresql className="absolute -top-16 right-5 sm:-right-[5vw]" />
         <SiFigma className="absolute -bottom-24 left-[5vw] sm:left-0" />
         <SiGooglegemini className="absolute -bottom-16 left-24" />
-        <SiOpenai className="absolute -bottom-20 right-24 -translate-x-1/2" />
+        <Bot className="absolute -bottom-20 right-24 -translate-x-1/2" />
         <SiNotion className="absolute -bottom-28 right-[5vw] sm:right-0" />
       </div>
     </div>

@@ -1,11 +1,5 @@
-import Project from "@/components/Project";
-import capycopy from "@/public/projectImages/capycopy.jpg";
-import jankenfun from "@/public/projectImages/jankenfunproject.jpg";
-import baconawa from "@/public/projectImages/baconawa.jpg";
-import clicker from "@/public/projectImages/godotproject.jpg";
-import setemp from "@/public/projectImages/se-temp.jpg";
 import {
-  SiCss3,
+  SiCss,
   SiFirebase,
   SiGodotengine,
   SiHtml5,
@@ -18,6 +12,12 @@ import {
   SiTypescript,
   SiVite,
 } from "@icons-pack/react-simple-icons";
+import Project from "@/components/Project";
+import baconawa from "@/public/projectImages/baconawa.jpg";
+import capycopy from "@/public/projectImages/capycopy.jpg";
+import clicker from "@/public/projectImages/godotproject.jpg";
+import jankenfun from "@/public/projectImages/jankenfunproject.jpg";
+import setemp from "@/public/projectImages/se-temp.jpg";
 
 const Projects = () => {
   return (
@@ -39,7 +39,7 @@ const Projects = () => {
             <>
               <SiJavascript />
               <SiHtml5 />
-              <SiCss3 />
+              <SiCss />
             </>
           }
         />
@@ -47,7 +47,7 @@ const Projects = () => {
           title="CapyCopy"
           author="self"
           description="A web application based on my classmate's project for a certain subject.
-          This is my first project in using React and Typescript together with Vite. I used this as 
+          This is my first project in using React and Typescript together with Vite. I used this as
           a playground for experimenting with web development in the client."
           image={capycopy}
           date={new Date(2023, 12)}

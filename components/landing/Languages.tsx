@@ -1,6 +1,6 @@
 import {
-  SiCsharp,
-  SiCss3,
+  SiC,
+  SiCss,
   SiGo,
   SiGodotengine,
   SiHtml5,
@@ -15,11 +15,11 @@ const Languages = () => {
         <h3>Written</h3>
         <p>in these languages</p>
         <SiHtml5 className="absolute -left-10 -top-10" />
-        <SiCss3 className="absolute -top-12 left-9" />
+        <SiCss className="absolute -top-12 left-9" />
         <SiPython className="absolute -top-16 right-9" />
         <SiTypescript className="absolute -right-8 -top-12" />
         <SiGodotengine className="absolute -bottom-10 left-5" />
-        <SiCsharp className="absolute -bottom-20 left-1/2 -translate-x-1/2" />
+        <SiC className="absolute -bottom-20 left-1/2 -translate-x-1/2" />
         <SiGo className="absolute -bottom-12 right-5" />
       </div>
     </div>

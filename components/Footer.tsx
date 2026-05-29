@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/public/logos//main.svg";
+import logo from "@/public/logos/main.svg";
 import TransitionLink from "./TransitionLink";
 import Link from "next/link";
 import { SiGithub } from "@icons-pack/react-simple-icons";
